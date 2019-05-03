@@ -25,6 +25,7 @@ dependencies:
 - accelerate-llvm-native
 - gloss
 - gloss-accelerate
+- mwc-random-accelerate
 
 library:
   source-dirs: src

@@ -11,6 +11,8 @@ extra-deps:
 - llvm-hs-pure-8.0.0
 - tasty-hedgehog-0.2.0.0
 - gloss-accelerate-2.0.0.1
+- mwc-random-accelerate-0.1.0.0
+
 
 flags:
   llvm-hs:
