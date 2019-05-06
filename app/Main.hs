@@ -38,7 +38,6 @@ step = stencil rule clamp
 main :: IO ()
 main = do
   i <- randomArray uniform (Z:.1024:.1024)
-  let view = CPU.run $ modelToBitmap (use i)
   simulate FullScreen white 30 i (flip bitmapOfArray False . CPU.run . modelToBitmap . use) $
     \_ _ m ->
       CPU.run $ step (use m)
